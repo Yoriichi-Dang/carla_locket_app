@@ -2,12 +2,12 @@ import 'package:carla_locket_app/core/layouts/home_layout.dart';
 import 'package:carla_locket_app/features/auth/presentation/pages/auth_introduct.dart';
 import 'package:carla_locket_app/features/auth/presentation/pages/sign_in.dart';
 import 'package:carla_locket_app/features/auth/presentation/pages/sign_up.dart';
-import 'package:carla_locket_app/features/home/presentation/pages/home.dart';
+import 'package:carla_locket_app/features/home/presentation/pages/camera_home.dart';
 import 'package:carla_locket_app/features/splash/presentation/pages/splash.dart';
 import 'package:flutter/material.dart';
 
 class AppRoutes {
-  static const String home = '/home';
+  static const String cameraHome = '/camera-home';
   static const String signIn = '/sign-in';
   static const String signUp = '/sign-up';
   static const String resetPassword = '/reset-password';
@@ -18,10 +18,9 @@ class AppRoutes {
   static const String homeLayout = '/home-layout';
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case home:
-        return MaterialPageRoute(builder: (_) => const HomePage());
-      case homeLayout:
-        return MaterialPageRoute(builder: (_) => const HomeLayout());
+      case cameraHome:
+        return MaterialPageRoute(builder: (_) => const CameraHome());
+
       case signIn:
         return MaterialPageRoute(builder: (_) => const SignInPage());
       case signUp:

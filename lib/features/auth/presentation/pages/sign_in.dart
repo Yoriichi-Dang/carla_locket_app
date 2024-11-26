@@ -74,7 +74,7 @@ class SignInPage extends StatelessWidget {
             Button(
               title: 'Sign In',
               onPressed: () {
-                Navigator.pushNamed(context, AppRoutes.home);
+                Navigator.pushNamed(context, AppRoutes.cameraHome);
               },
               backgroundColor: Colors.white,
               textColor: AppColors.secondaryColor,

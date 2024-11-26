@@ -23,8 +23,9 @@ class _DropdownFriendsState extends State<DropdownFriends> {
         width: 150,
         padding: const EdgeInsets.all(13),
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            color: const Color.fromARGB(255, 40, 100, 191)),
+          borderRadius: BorderRadius.circular(20),
+          color: AppColors.secondaryColor_300,
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
